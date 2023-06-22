@@ -49,7 +49,7 @@ submitBtn.addEventListener("click", () => {
   formData.append("image", blob, "image.png");
 
   // Make a POST request
-  fetch("http://192.168.43.43:8082/digit-classifier-api", {
+  fetch("https://192.168.43.43:8082/digit-classifier-api", {
     method: "POST",
     body: formData,
   })
