@@ -2,12 +2,15 @@ const canvas = document.querySelector(".drawing-board canvas");
 const clearBtn = document.querySelector(".footer .clear");
 const submitBtn = document.querySelector(".footer .submit");
 const resultContainer = document.querySelector("#result");
-
+let load = ``;
 ctx = canvas.getContext("2d");
 
 let isDrawing = false;
 let brushWidth = 40;
 let result;
+
+load = resultContainer.innerHTML;
+resultContainer.innerHTML = "-";
 
 window.addEventListener("load", () => {
   canvas.width = canvas.offsetWidth;
@@ -47,6 +50,9 @@ submitBtn.addEventListener("click", () => {
   // Create a FormData object and append the Blob
   const formData = new FormData();
   formData.append("image", blob, "image.png");
+
+  // Display loader
+  resultContainer.innerHTML = load;
 
   // Make a POST request
   fetch("https://132.145.60.229:1337/digit-classifier-api", {

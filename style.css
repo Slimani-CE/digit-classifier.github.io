@@ -61,7 +61,7 @@ body{
     flex-direction: column;
     flex: 1;
 }
-.result-body p{
+.result-body div{
     font-size: 70px;
     font-weight: bold;
     background-color: aliceblue;
@@ -74,6 +74,7 @@ body{
 }
 .board-h2{
     font-size: 18px;
+    margin: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footer{
@@ -96,18 +97,18 @@ body{
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.6);
 }
 .submit{
-    background-color: rgb(134, 248, 147);
-    border: 2px solid rgb(134, 248, 147);
+    background-color: rgb(232, 255, 234);
+    border: 2px solid rgb(232, 255, 234);
 }
 .clear{
-    border: 2px solid rgb(134, 248, 147);
+    border: 2px solid rgb(232, 255, 234);
     background-color: transparent;
-    color: rgb(134, 248, 147);
+    color: rgb(232, 255, 234);
 }
 .clear:hover{
     color: black;
-    background-color: rgb(134, 248, 147);
-    border: 2px solid rgb(134, 248, 147);
+    background-color: rgb(232, 255, 234);
+    border: 2px solid rgb(232, 255, 234);
 }
 .btn:hover{
     box-shadow: none;
