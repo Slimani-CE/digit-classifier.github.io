@@ -1,4 +1,4 @@
-# Digit classifier (Front-end module)
+# Handwritten Digit Classifier (Front-end module)
 This repository contains the front-end code for the Digit Classifier project.
 
 For the complete Digit Classifier project, including the back-end and machine learning components, please visit the main repository:
